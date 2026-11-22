@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiba Maatoug | Portfolio</title>
+  <meta name="description" content="Hiba Maatoug's personal portfolio - AI, Software Development and Graphic Design.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">H<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-button">Let's Talk ↗</a>
+    </nav>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO ✿</p>
+      <h1>
+        Hi, I'm <span>Hiba</span>.<br>
+        I create, explore<br>
+        & innovate.
+      </h1>
+      <p class="hero-description">
+        I'm a third-year Computer Science and Multimedia student at SESAME University passionate about Artificial Intelligence, software development, emerging technologies and graphic design.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="primary-button">Explore My Work ↗</a>
+        <a href="images/CV-Hiba-Maatoug-EN.pdf" class="secondary-button" target="_blank" download>
+          Download CV ↓
+        </a>
+      </div>
+      <div class="hero-tags">
+        <span>✦ Technology</span>
+        <span>♡ Creativity</span>
+        <span>✿ Innovation</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-frame">
+        <img src="images/profile.jpeg" alt="Hiba Maatoug" class="profile-photo" onerror="this.onerror=null; this.src='images/profile.jpg';">
+      </div>
+      <div class="floating-card">
+        ✿ Creative mind, technical vision.
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about" class="section">
+    <p class="eyebrow">GET TO KNOW ME</p>
+    <h2>A little about <span>me.</span></h2>
+    <div class="about-content">
+      <p>
+        I am a third-year Computer Science and Multimedia student at SESAME University, Tunisia.
+        I enjoy combining technology and creativity to develop meaningful ideas and solutions.
+      </p>
+      <p>
+        My interests include Artificial Intelligence, Software Development, innovative technologies and Graphic Design.
+      </p>
+      <p>
+        I am always eager to learn, discover new tools, improve my skills and take on new challenges.
+      </p>
+    </div>
+    <div class="cv-buttons">
+      <a href="images/CV-Hiba-Maatoug-EN.pdf" class="primary-button" target="_blank" download>Download CV (English) ↓</a>
+      <a href="images/CV-Hiba-Maatoug-Sidebar-FR.pdf" class="secondary-button" target="_blank" download>Télécharger CV (Français) ↓</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section soft-section">
+    <p class="eyebrow">WHAT I DO</p>
+    <h2>My <span>skills.</span></h2>
+    <div class="skills-grid">
+      <article class="skill-card">
+        <div class="skill-icon">✧</div>
+        <h3>Artificial Intelligence</h3>
+        <p>AI concepts, intelligent solutions, automation and AI-powered applications.</p>
+      </article>
+      <article class="skill-card">
+        <div class="skill-icon">⌘</div>
+        <h3>Software Development</h3>
+        <p>Application development, programming, databases and software concepts.</p>
+      </article>
+      <article class="skill-card">
+        <div class="skill-icon">⌁</div>
+        <h3>Technology & Innovation</h3>
+        <p>Exploring modern technologies and developing innovative digital solutions.</p>
+      </article>
+      <article class="skill-card">
+        <div class="skill-icon">♡</div>
+        <h3>Graphic Design</h3>
+        <p>Visual identity, branding, posters, social media and creative design.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="eyebrow">SOME OF MY WORK</p>
+    <h2>Featured <span>projects.</span></h2>
+    <div class="projects-grid">
+
+      <!-- PROJECT 1 — BH Bank / AI in the SOC -->
+      <article class="project-card">
+        <div class="project-image-slider">
+          <div class="slides" id="slider-soc">
+            <img src="images/banksite1.png" alt="BH Bank Project 1">
+            <img src="images/banksite2.png" alt="BH Bank Project 2">
+            <img src="images/banksite3.png" alt="BH Bank Project 3">
+            <img src="images/banksite4.png" alt="BH Bank Project 4">
+            <img src="images/banksite5.png" alt="BH Bank Project 5">
+            <img src="images/banksite6.png" alt="BH Bank Project 6">
+            <img src="images/banksite7.png" alt="BH Bank Project 7">
+          </div>
+          <button class="slider-btn prev" onclick="slideProject('slider-soc', -1)">‹</button>
+          <button class="slider-btn next" onclick="slideProject('slider-soc', 1)">›</button>
+        </div>
+        <div class="project-info">
+          <span class="project-category">ARTIFICIAL INTELLIGENCE · INTERNSHIP</span>
+          <h3>Introducing AI into the SOC</h3>
+          <p>An internship project at BH Bank exploring the integration of Artificial Intelligence into the Security Operations Center — focusing on AI-driven solutions and intelligent automation.</p>
+          <span class="project-tech">AI · Intelligent Solutions · Automation</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 — BilletVerif -->
+      <article class="project-card">
+        <div class="project-image-slider">
+          <div class="slides" id="slider-billet">
+            <img src="images/billetverif1.png" alt="BilletVerif Screenshot 1">
+            <img src="images/billetverif2.png" alt="BilletVerif Screenshot 2">
+            <img src="images/billetverif3.png" alt="BilletVerif Screenshot 3">
+          </div>
+          <button class="slider-btn prev" onclick="slideProject('slider-billet', -1)">‹</button>
+          <button class="slider-btn next" onclick="slideProject('slider-billet', 1)">›</button>
+        </div>
+        <div class="project-info">
+          <span class="project-category">STUDENT PROJECT · AI</span>
+          <h3>BilletVerif</h3>
+          <p>A document verification concept designed to classify bills as authentic, non-authentic or uncertain using OCR and image analysis.</p>
+          <span class="project-tech">Python · OCR · OpenCV · AI</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 — Graphic Design (IEEE & WIE) -->
+      <article class="project-card">
+        <div class="project-image-slider">
+          <div class="slides" id="slider-design">
+            <img src="images/wie1.jpg" alt="IEEE WIE Visual Design 1">
+            <img src="images/wie2.jpg" alt="IEEE WIE Visual Design 2">
+            <img src="images/ieee1.jpg" alt="IEEE SESAME Poster 1">
+            <img src="images/ieee2.jpg" alt="IEEE SESAME Poster 2">
+          </div>
+          <button class="slider-btn prev" onclick="slideProject('slider-design', -1)">‹</button>
+          <button class="slider-btn next" onclick="slideProject('slider-design', 1)">›</button>
+        </div>
+        <div class="project-info">
+          <span class="project-category">GRAPHIC DESIGN · LEADERSHIP</span>
+          <h3>Visual Communication & Design</h3>
+          <p>Posters, promotional branding and visual assets created as WIE Secretary General & Graphic Designer for IEEE SESAME Student Branch events and campaigns.</p>
+          <span class="project-tech">Graphic Design · Branding · IEEE WIE</span>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 — University Projects -->
+      <article class="project-card">
+        <div class="project-image-slider">
+          <div class="slides" id="slider-uni">
+            <img src="images/uni1.png" alt="SESAME University Project 1">
+            <img src="images/uni2.png" alt="SESAME University Project 2">
+          </div>
+          <button class="slider-btn prev" onclick="slideProject('slider-uni', -1)">‹</button>
+          <button class="slider-btn next" onclick="slideProject('slider-uni', 1)">›</button>
+        </div>
+        <div class="project-info">
+          <span class="project-category">ACADEMIC PROJECTS</span>
+          <h3>Development & Multimedia</h3>
+          <p>Academic projects involving full-stack application development, databases, multimedia platforms and software architectures at SESAME University.</p>
+          <span class="project-tech">Development · Databases · Multimedia</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section soft-section">
+    <p class="eyebrow">MY CREDENTIALS</p>
+    <h2>Certifications<span>.</span></h2>
+    <div class="certs-grid">
+
+      <article class="cert-card">
+        <div class="cert-image-wrap">
+          <img src="images/ai.jpeg" alt="Cisco AI Specialist Certificate" class="cert-img" onerror="this.onerror=null; this.src='images/ai.jpg';">
+        </div>
+        <div class="cert-info">
+          <span class="cert-issuer">CISCO · ARTIFICIAL INTELLIGENCE</span>
+          <h3>AI Specialist</h3>
+          <p>Certified in Artificial Intelligence fundamentals, intelligent systems and AI-driven automation from Cisco Networking Academy.</p>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-image-wrap">
+          <img src="images/ccna.jpeg" alt="Cisco CCNA Certificate" class="cert-img" onerror="this.onerror=null; this.src='images/ccna.jpg';">
+        </div>
+        <div class="cert-info">
+          <span class="cert-issuer">CISCO · NETWORKING & IT INFRASTRUCTURE</span>
+          <h3>CCNA — Networking Fundamentals</h3>
+          <p>Certified in network architecture, protocols and digital infrastructure — core IT foundations that underpin modern AI and software systems.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <p class="eyebrow">MY JOURNEY</p>
+    <h2>Experience & <span>activities.</span></h2>
+    <article class="experience-card">
+      <span class="project-category">6 WEEKS · 2026</span>
+      <h3>BH Bank</h3>
+      <p class="experience-role">IT Intern — AI in the SOC</p>
+      <p>Worked on a project exploring the integration of Artificial Intelligence into the Security Operations Center (SOC), with an emphasis on AI-driven solutions and intelligent automation.</p>
+    </article>
+    <article class="experience-card">
+      <span class="project-category">2026 · STUDENT LEADERSHIP</span>
+      <h3>IEEE SESAME Student Branch</h3>
+      <p class="experience-role">WIE Secretary General & Graphic Designer</p>
+      <p>Contributing to the Women in Engineering Affinity Group through organizational activities, communication and creative visual design.</p>
+    </article>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <p class="eyebrow">LET'S CONNECT</p>
+    <h2>
+      Have a project in mind?<br>
+      <span>Let's talk!</span>
+    </h2>
+    <p>I'm always open to learning, collaborating and discovering new opportunities.</p>
+    <a href="mailto:hiba.maatoug@sesame.com.tn" class="primary-button">Get in Touch ↗</a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/hiba-maatoug-35aba0387/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/hibamaatoug-blip" target="_blank">GitHub</a>
+      <a href="mailto:hiba.maatoug@sesame.com.tn">Email</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & built with ♡ by Hiba Maatoug © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

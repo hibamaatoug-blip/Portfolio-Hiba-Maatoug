@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiba Maatoug - Portfolio & Resume (PDF Version)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #c47799;
+      --light-pink: #fcecf3;
+      --dark: #29232a;
+      --gray: #555056;
+      --border: #f0d6e2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      background: #faf8f9;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: white;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border);
+    }
+
+    .action-bar {
+      position: sticky;
+      top: 20px;
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .btn-pdf {
+      background: #c47799;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(196, 119, 153, 0.35);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-pdf:hover {
+      background: #aa5a80;
+      transform: translateY(-2px);
+    }
+
+    header {
+      border-bottom: 2px solid var(--light-pink);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title-area h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      color: var(--dark);
+    }
+
+    .title-area h1 span {
+      color: var(--pink);
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--gray);
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--light-pink);
+      color: var(--pink);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: var(--pink);
+      text-decoration: none;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--dark);
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid var(--light-pink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title span {
+      color: var(--pink);
+    }
+
+    .about-text {
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .skill-card {
+      background: #fffbfe;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .skill-card h4 {
+      font-size: 15px;
+      color: var(--pink);
+      margin-bottom: 6px;
+    }
+
+    .skill-card p {
+      font-size: 12.5px;
+      color: var(--gray);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      background: white;
+    }
+
+    .project-card .cat {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .project-card h4 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .project-card p {
+      font-size: 12.5px;
+      color: var(--gray);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .tags {
+      font-size: 11px;
+      color: #92476b;
+      background: var(--light-pink);
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .exp-item {
+      border-left: 3px solid var(--pink);
+      padding-left: 16px;
+      margin-bottom: 18px;
+    }
+
+    .exp-item .meta {
+      font-size: 11px;
+      color: var(--pink);
+      font-weight: 700;
+    }
+
+    .exp-item h4 {
+      font-size: 16px;
+      margin-top: 2px;
+    }
+
+    .exp-item .role {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+
+    .exp-item p {
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--gray);
+      border-top: 1px solid var(--light-pink);
+      padding-top: 20px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .skill-card, .project-card, .exp-item {
+        page-break-inside: avoid;
+      }
+      @page {
+        margin: 1.5cm;
+        size: A4 portrait;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <button class="btn-pdf" onclick="window.print()">
+      📄 Save / Print as PDF
+    </button>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="title-area">
+        <h1>Hiba <span>Maatoug</span></h1>
+        <div class="subtitle">Computer Science & Multimedia Student · SESAME University</div>
+        <div class="badge">✿ Artificial Intelligence · Software Development · Graphic Design</div>
+      </div>
+      <div class="contact-info">
+        <div>📍 Tunisia</div>
+        <div>✉️ <a href="mailto:hiba.maatoug@sesame.com.tn">hiba.maatoug@sesame.com.tn</a></div>
+        <div>🔗 <a href="https://www.linkedin.com/in/hiba-maatoug-35aba0387/" target="_blank">LinkedIn</a> | <a href="https://github.com/hibamaatoug-blip" target="_blank">GitHub</a></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h3 class="section-title">About <span>Me</span></h3>
+      <p class="about-text">
+        Third-year Computer Science and Multimedia student at SESAME University, Tunisia. Passionate about Artificial Intelligence, software development, emerging technologies, and creative graphic design. Driven to combine technical problem-solving with elegant aesthetic vision to build impactful digital solutions.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">Core <span>Skills</span></h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>✦ Artificial Intelligence</h4>
+          <p>AI concepts, intelligent automation, pattern recognition, OCR, machine learning fundamentals.</p>
+        </div>
+        <div class="skill-card">
+          <h4>⌘ Software Development</h4>
+          <p>Application development, Python, JavaScript, databases, modern web architectures.</p>
+        </div>
+        <div class="skill-card">
+          <h4>⌁ Technology & Innovation</h4>
+          <p>Exploring modern tech ecosystems, emerging tools, digital transformation, and smart workflows.</p>
+        </div>
+        <div class="skill-card">
+          <h4>♡ Graphic Design</h4>
+          <p>Visual branding, typography, posters, social media content, UI design principles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">Featured <span>Projects</span></h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="cat">Internship · Artificial Intelligence</span>
+          <h4>Introducing AI into the SOC</h4>
+          <p>Exploration and architecture project at BH Bank on integrating AI-driven intelligence and automated detection workflows inside a Security Operations Center.</p>
+          <span class="tags">AI · Intelligent Automation · SOC Workflow</span>
+        </div>
+        <div class="project-card">
+          <span class="cat">Student Project · AI</span>
+          <h4>BilletVerif</h4>
+          <p>Intelligent document verification concept to classify bills as authentic, non-authentic, or uncertain using optical character recognition and computer vision.</p>
+          <span class="tags">Python · OCR · OpenCV · AI</span>
+        </div>
+        <div class="project-card">
+          <span class="cat">Creative Design</span>
+          <h4>Visual Communication</h4>
+          <p>Branding, promotional posters, and creative multimedia assets produced for university events, campaigns, and student bodies (IEEE SESAME WIE).</p>
+          <span class="tags">Graphic Design · Branding · Multimedia</span>
+        </div>
+        <div class="project-card">
+          <span class="cat">Academic Projects</span>
+          <h4>Development & Multimedia</h4>
+          <p>Software applications, database management systems, interactive multimedia platforms, and web utilities developed throughout SESAME curriculum.</p>
+          <span class="tags">Full-Stack · Databases · Multimedia</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">Certifications</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>🏅 Cisco AI Specialist</h4>
+          <p>Certified in Artificial Intelligence fundamentals, intelligent systems and AI-driven automation.</p>
+        </div>
+        <div class="skill-card">
+          <h4>🏅 Cisco CCNA</h4>
+          <p>Certified in network architecture, protocols and IT infrastructure foundations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">Experience & <span>Leadership</span></h3>
+      <div class="exp-item">
+        <div class="meta">2026 · 6 WEEKS</div>
+        <h4>BH Bank</h4>
+        <div class="role">IT Intern (AI in SOC)</div>
+        <p>Investigated and conceptualized the introduction of Artificial Intelligence in the Security Operations Center (SOC), highlighting intelligent triage and automated event handling.</p>
+      </div>
+      <div class="exp-item">
+        <div class="meta">2026 · STUDENT LEADERSHIP</div>
+        <h4>IEEE SESAME Student Branch</h4>
+        <div class="role">WIE Secretary General & Graphic Designer</div>
+        <p>Serving the Women in Engineering (WIE) Affinity Group through organizational leadership, communication management, and creative graphic design for initiatives.</p>
+      </div>
+    </section>
+
+    <footer>
+      Hiba Maatoug © 2026 · Designed with ♡
+    </footer>
+  </div>
+
+</body>
+</html>
